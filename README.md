@@ -1,12 +1,15 @@
 # oAuth2AzureEmail
 These PowerShell scripts serve as an example of sending email through the Microsoft Graph API via oAuth2 (443/TCP) and not SMTP.
 
-GraphAPI-email.ps1 - Simple example of sending an email via Graph API
-GraphAPI-email-with-CSV.ps1 - Example of sending an email via Graph API with an attachment.
-GraphAPI-email-with-CSV-report.ps1 - More complex example of sending email via Graph API and converting an array into a CSV. This script requires additional permissions.
+**GraphAPI-email.ps1** Simple example of sending an email via Graph API.<br />
+**GraphAPI-email-with-CSV.ps1** Example of sending an email via Graph API with an attachment.<br />
+**GraphAPI-email-with-CSV-report.ps1** More complex example of sending email via Graph API and converting an array into a CSV. This script requires additional permissions.<br />
 
 ## Azure Setup
-First you need to register an application with Azure
+To use any of these scripts you must setup the Azure components.
+
+### Application Registration
+First you need to register an application with Azure.
 
 1. Log in to http://portal.azure.com
 2. Select Microsoft Entra ID -> App Registrations or go directly to App Registrations
@@ -16,7 +19,7 @@ First you need to register an application with Azure
 6. Click Register
 
 ### Setup the Secrets
-Next you need a secret key pair for authentication
+Next you need a secret key pair for authentication.
 
 1. Click Certificates & Secrets
 2. Click New Client Secret
@@ -44,6 +47,8 @@ Last and most important is the permissions for the API. If you get a 40x you pro
 Note: The User.Read is not needed to send email.
 
 ### Setup Script
+The scripts have generic declarations and will not work without setup.
+
 1. Obtain the Application (Client) ID by clicking Overview
 2. Copy the GUID to the script declarations
 3. Obtain the Directory (Tenant) ID
