@@ -5,6 +5,8 @@ These PowerShell scripts serve as an example of sending email through the Micros
 **GraphAPI-email-with-CSV.ps1** Example of sending an email via Graph API with an attachment.<br />
 **GraphAPI-email-with-CSV-report.ps1** More complex example of sending email via Graph API and converting an array into a CSV. This script requires additional permissions.<br />
 
+*Note: Some servers or client might not support TLS 1.2 therefore you must force it. The GraphAPI-email.ps1 file has an optional line that can be uncommented to force TLS 1.2.*
+
 ## Azure Setup
 To use any of these scripts you must setup the Azure components.
 
