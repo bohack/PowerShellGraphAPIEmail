@@ -2,6 +2,9 @@
 # 08/16/24
 # Emails text to a specific email address via the Graph API
 
+# Optional to force TLS1.2
+#[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 $clientId = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 $tenantId = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 $clientSecretValue = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
